@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>shelf</title>
+  <link rel="stylesheet" href="/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <canvas id="field"></canvas>
+  <div class="wrap">
+    <header>
+      <h1>shelf</h1>
+      <p>Save a link, tag it, search later.</p>
+    </header>
+    <form id="add" class="panel">
+      <label>Add</label>
+      <div class="row">
+        <input name="title" placeholder="Title" required>
+        <input name="url" placeholder="https://" required>
+        <input name="tags" placeholder="tags, comma, separated">
+        <button type="submit">Save</button>
+      </div>
+    </form>
+    <section class="panel">
+      <label>Search</label>
+      <input id="q" placeholder="Filter by title, url, or tag">
+      <div id="list"></div>
+    </section>
+  </div>
+  <script src="/field.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>
